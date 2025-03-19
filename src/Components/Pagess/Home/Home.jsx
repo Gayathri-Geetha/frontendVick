@@ -22,13 +22,13 @@ function CalorieTracker() {
     console.log(token)
     try {
      
-      const response = await axios.post('http://127.0.0.1:5000/get_nutrition', {
+      const response = await axios.post('https://backendvick.onrender.com/get_nutrition', {
         food: foodInput,
         weight: parseInt(weight,10),
       },{headers:{'Authorization':`Bearer ${token}`}})
       
      if(custom){
-      const response2 = await axios.post('http://127.0.0.1:5000/get_custom', {
+      const response2 = await axios.post('https://backendvick.onrender.com/get_custom', {
         food: foodInput,
         weight: parseInt(weight),
         custom: custom
