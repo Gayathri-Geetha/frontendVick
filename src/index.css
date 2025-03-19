@@ -1,0 +1,22 @@
+/* Twailwind CSS is imprted and the #btn CSS for the icons on layout as box shadow is not possible in Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    @apply bg-gray-700;
+  }
+#btn{
+               
+    display: inline-block; 
+    /* background-color:#435a7c;  */
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px; 
+    padding-bottom: 10px;
+    box-shadow: 7px 7px 0.1px  #374151;
+    max-height: 40px;
+    border-radius: 10px;
+    border-width: 1.4px;
+    
+    
+}
